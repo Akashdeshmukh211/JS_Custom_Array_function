@@ -1,36 +1,5 @@
 "use stricts";
-// console.log("hello world");
-const h1tag = document.querySelector("h1"); // Select H1 tag
-// console.log(h1tag);
-const btn = document.querySelector("button"); // Select button
-// console.log(btn);
-btn.addEventListener("click", (e) => {
-  //   h1tag.classList.remove("h1tag");
-  //   h1tag.classList.add("h1tag-color-change");
-  h1tag.classList.toggle("h1tag-color-change");
-  h1tag.insertAdjacentText("afterbegin", "I Love ");
-  h1tag.style.background = "#fff";
-});
-//Implementing Custom Map Function
 
-const MyMapFun = function (callback) {
-  // console.log("My custom Map Function");
-
-  let newArray = [];
-  for (let i = 0; i < this.length; i++) {
-    console.log(this[i]);
-    newArray[i] = callback([this[i], i]);
-    // console.log(ElementUpdate);
-  }
-  return newArray;
-};
-Array.prototype.MyMap = MyMapFun;
-const arr = [1, 2, 5];
-// console.log(
-//   arr.MyMap((e) => {
-//     ++e;
-//   })
-// );
 //Custom indexOf
 Array.prototype.customIndexOf = function (value) {
   for (let i = 0; i < this.length; i++) {
