@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css" />
+
+<html>
+  <title>JavaScritp TodoList</title>
+  <body>
+    <h1 class="h1tag">JavaScritp Todo List</h1>
+    <div class="blocks">
+      <div class="block_add">
+        <input
+          type="text"
+          id="textfiled"
+          class="text_add"
+          placeholder="Add a task"
+        />
+        <input type="submit" class="btn_add" onclick="addMore()" />
+      </div>
+      <span id="error"></span>
+      <div class="blocks_remove">
+        <ul class="ToDoUl"></ul>
+      </div>
+    </div>
+  </body>
+  <script src="scritp.js"></script>
+</html>
